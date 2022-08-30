@@ -22,7 +22,7 @@ public class ReadExcel {
         XSSFSheet sheet = wb.getSheetAt(0);
 
         Iterator<Row> iterator = sheet.iterator();
-        while (((Iterator<?>) iterator).hasNext())
+        while (iterator.hasNext())
         {
             Row row = iterator.next();
             Iterator<Cell> cellIterator = row.cellIterator();
